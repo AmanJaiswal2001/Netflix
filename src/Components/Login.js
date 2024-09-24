@@ -26,7 +26,7 @@ setisSigninForm(!isSiginForm);
             <input  className="p-4  w-full bg-blue-950 border-none outline outline-offset-2 outline-1  rounded-sm" type='text' placeholder='Email address'/><br></br>
             <input  className="p-4  w-full bg-blue-950 rounded-sm outline outline-offset-2 outline-1" type='password' placeholder='Password'/><br></br>
             <button className='bg-red-600  p-3 w-full rounded-sm'>{isSiginForm?"Sign In":"Sign Up"}</button>
-        <p onClick={ToggleSigninForm}>{isSiginForm?"Already Sign Up":"New to Netflix? Sign up now"}</p>
+        <p onClick={ToggleSigninForm}>{isSiginForm?"Already Sign up":"New to Netflix? Sign up now"}</p>
         
         </form>
     </div>
