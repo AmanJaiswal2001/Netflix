@@ -6,7 +6,7 @@ import {auth} from "../utils/firebase";
 //import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/UserSlice';
-import { PHOTOURL } from '../utils/constrints';
+import { BG_CDN, PHOTOURL } from '../utils/constrints';
 
 
 const Login = () => {
@@ -100,7 +100,7 @@ setisSigninForm(!isSiginForm);
     <div className="">
     <Header/>
     <div className='absolute'>
-        <img src='https://assets.nflxext.com/ffe/siteui/vlv3/47c2bc92-5a2a-4f33-8f91-4314e9e62ef1/web/IN-en-20240916-TRIFECTA-perspective_72df5d07-cf3f-4530-9afd-8f1d92d7f1a8_small.jpg'/>
+        <img src={BG_CDN}/>
     </div>
         <form 
         onSubmit={(e)=>{e.preventDefault()}}
